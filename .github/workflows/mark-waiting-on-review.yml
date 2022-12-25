@@ -17,3 +17,6 @@ jobs:
       - uses: actions-ecosystem/action-add-labels@v1
         with:
           labels: S-waiting-on-review
+      - uses: actions-ecosystem/action-remove-labels@v1
+        with:
+          labels: S-waiting-on-author
