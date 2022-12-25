@@ -8,7 +8,7 @@ on:
     
 
 jobs:
-  update-labels:
+  mark-waiting-on-author:
     runs-on: ubuntu-latest
     steps:
       - uses: actions-ecosystem/action-add-labels@v1

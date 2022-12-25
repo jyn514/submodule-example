@@ -8,7 +8,7 @@ on:
     
 
 jobs:
-  update-labels:
+  mark-waiting-on-review:
     runs-on: ubuntu-latest
     # 'created' is only for issue commments.
     # issue_comment fires for both issues and pull requests
