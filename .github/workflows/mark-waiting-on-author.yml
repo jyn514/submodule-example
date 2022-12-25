@@ -1,0 +1,16 @@
+on:
+  pull_request:
+    branches:
+      - main
+    types: [closed, converted_to_draft]
+  pull_request_review:
+    types: [submitted]
+    
+
+jobs:
+  update-labels:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions-ecosystem/action-add-labels@v1
+        with:
+          labels: S-waiting-on-review
